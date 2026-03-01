@@ -20,13 +20,13 @@ export default function WhyUs() {
         className="card"
       >
         <div className="text-lg font-extrabold">Why choose us?</div>
-        <p className="mt-2 text-slate-100/85">
+        <p className="mt-2 text-orange-50/85">
           Premium design, clean implementation, and a smooth experience from idea to launch.
         </p>
 
         <div className="mt-6 space-y-3">
           {items.map((x) => (
-            <div key={x} className="flex items-start gap-3 text-slate-100">
+            <div key={x} className="flex items-start gap-3 text-orange-50">
               <CheckCircle2 size={18} className="mt-0.5" />
               <div>{x}</div>
             </div>
@@ -41,25 +41,25 @@ export default function WhyUs() {
         transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
         className="card relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/15 via-cyan-400/10 to-emerald-400/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/16 via-amber-400/12 to-rose-400/10" />
         <div className="relative">
           <div className="text-lg font-extrabold">What you get</div>
-          <p className="mt-2 text-slate-100/85">
+          <p className="mt-2 text-orange-50/85">
             A production-ready build with modern tooling, plus a structure that’s easy to extend later.
           </p>
 
           <div className="mt-6 grid gap-3">
             <div className="glass rounded-2xl p-4">
               <div className="text-sm font-bold">Fast Launch</div>
-              <div className="text-xs text-slate-100/70 mt-1">Clean landing page + deploy-ready build.</div>
+              <div className="text-xs text-orange-100/70 mt-1">Clean landing page + deploy-ready build.</div>
             </div>
             <div className="glass rounded-2xl p-4">
               <div className="text-sm font-bold">Easy Editing</div>
-              <div className="text-xs text-slate-100/70 mt-1">Update brand/phone/email in one file.</div>
+              <div className="text-xs text-orange-100/70 mt-1">Update brand/phone/email in one file.</div>
             </div>
             <div className="glass rounded-2xl p-4">
               <div className="text-sm font-bold">Modern Animations</div>
-              <div className="text-xs text-slate-100/70 mt-1">Smooth motion without being heavy.</div>
+              <div className="text-xs text-orange-100/70 mt-1">Smooth motion without being heavy.</div>
             </div>
           </div>
         </div>

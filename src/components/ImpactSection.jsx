@@ -42,10 +42,10 @@ export default function ImpactSection() {
           transition={{ duration: 0.45, ease: "easeOut", delay: idx * 0.04 }}
           className="card"
         >
-          <div className="text-3xl font-black bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent">
+          <div className="text-3xl font-black bg-gradient-to-r from-orange-200 to-rose-200 bg-clip-text text-transparent">
             <Counter target={item.value} suffix={item.suffix} />
           </div>
-          <div className="mt-3 text-sm text-slate-100/85 leading-relaxed">{item.label}</div>
+          <div className="mt-3 text-sm text-orange-50/85 leading-relaxed">{item.label}</div>
         </motion.div>
       ))}
     </div>
