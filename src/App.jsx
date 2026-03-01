@@ -11,6 +11,8 @@ import ContactBlock from "./components/ContactBlock.jsx"
 import WhatsAppFab from "./components/WhatsAppFab.jsx"
 import Footer from "./components/Footer.jsx"
 import LogosStrip from "./components/LogosStrip.jsx"
+import PositioningSection from "./components/PositioningSection.jsx"
+import ImpactSection from "./components/ImpactSection.jsx"
 
 function TinyPolicy({ id, title, text }) {
   return (
@@ -28,39 +30,29 @@ export default function App() {
       <main>
         <Hero />
 
-        <div className="mt-6">
+        <Section
+          id="positioning"
+          eyebrow="Positioning"
+          title="Why Work With Us?"
+          subtitle="We build AI-enabled systems around real business goals, not vanity metrics."
+        >
+          <PositioningSection />
+        </Section>
+
+        <div className="mt-2">
           <DividerGlow />
         </div>
 
-        <LogosStrip />
-
         <Section
-          id="about"
-          eyebrow="Who we are"
-          title="A small studio with big standards."
-          subtitle="We design and build premium digital products — from landing pages to full mobile apps. Simple, modern, and built to scale."
+          id="impact"
+          eyebrow="Results"
+          title="Real Business Impact"
+          subtitle="Performance outcomes we engineer through automation, operational intelligence, and execution speed."
         >
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="card">
-              <div className="text-lg font-extrabold">Mission</div>
-              <p className="mt-2 text-violet-100/80">
-                Build products that feel effortless for users and powerful for businesses.
-              </p>
-            </div>
-            <div className="card">
-              <div className="text-lg font-extrabold">Focus</div>
-              <p className="mt-2 text-violet-100/80">
-                Performance, clean UI, and real-world usability — not just visuals.
-              </p>
-            </div>
-            <div className="card">
-              <div className="text-lg font-extrabold">Approach</div>
-              <p className="mt-2 text-violet-100/80">
-                Short feedback loops, clear deliverables, and fast iterations.
-              </p>
-            </div>
-          </div>
+          <ImpactSection />
         </Section>
+
+        <LogosStrip />
 
         <Section
           id="services"
@@ -73,9 +65,9 @@ export default function App() {
 
         <Section
           id="work"
-          eyebrow="Selected work"
-          title="A few examples of what we build."
-          subtitle="Swap these preview projects with your real client work any time. Each card can link to a live demo or a full case study."
+          eyebrow="Case Studies"
+          title="Structured case studies with measurable outcomes."
+          subtitle="We focus on challenge, implementation, and operational results — then map each engagement to business impact."
         >
           <WorkGrid />
         </Section>

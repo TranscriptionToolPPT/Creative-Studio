@@ -4,9 +4,10 @@ import { ArrowUpRight } from "lucide-react"
 import Container from "./Container.jsx"
 
 const links = [
-  { label: "About", href: "#about" },
+  { label: "Why Us", href: "#positioning" },
+  { label: "Impact", href: "#impact" },
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
+  { label: "Case Studies", href: "#work" },
   { label: "Process", href: "#process" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
@@ -42,7 +43,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#contact" className="btn-primary" aria-label="Join the family">
-              Join the Family <ArrowUpRight size={16} />
+              Start Your Project <ArrowUpRight size={16} />
             </a>
           </nav>
 
