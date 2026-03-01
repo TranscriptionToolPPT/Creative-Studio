@@ -40,7 +40,7 @@ ${message}`)
             <h3 className="mt-4 text-2xl md:text-3xl font-extrabold tracking-tight">
               Want to Join the Craftive Family?
             </h3>
-            <p className="mt-3 text-slate-700">
+            <p className="mt-3 text-violet-100/80">
               Send a quick message and we’ll reply with a clear plan, timeline, and next steps.
             </p>
 
@@ -61,15 +61,15 @@ ${message}`)
             <div className="mt-8 grid gap-3">
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-sm font-bold"><Phone size={16} /> Phone</div>
-                <div className="mt-2 text-slate-700">{SITE.phoneDisplay}</div>
+                <div className="mt-2 text-violet-100/80">{SITE.phoneDisplay}</div>
               </div>
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-sm font-bold"><Mail size={16} /> Email</div>
-                <div className="mt-2 text-slate-700">{SITE.email}</div>
+                <div className="mt-2 text-violet-100/80">{SITE.email}</div>
               </div>
             </div>
 
-            <div className="mt-8 text-xs text-slate-500">
+            <div className="mt-8 text-xs text-violet-200/55">
               By contacting us, you agree to our basic privacy & communication terms.
             </div>
           </div>
@@ -79,7 +79,7 @@ ${message}`)
       <div className="lg:col-span-7">
         <div className="card">
           <div className="text-lg font-extrabold">Send a message</div>
-          <p className="mt-2 text-slate-700">No backend needed — it opens your email client with the details.</p>
+          <p className="mt-2 text-violet-100/80">No backend needed — it opens your email client with the details.</p>
 
           <form className="mt-6 grid gap-4" onSubmit={onSubmit}>
             <div className="grid gap-4 md:grid-cols-2">

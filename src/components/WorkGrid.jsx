@@ -14,7 +14,7 @@ export default function WorkGrid() {
           transition={{ duration: 0.55, ease: "easeOut", delay: idx * 0.06 }}
           className="card overflow-hidden group"
         >
-          <div className="relative h-44 overflow-hidden rounded-2xl border border-black/10 bg-black/5">
+          <div className="relative h-44 overflow-hidden rounded-2xl border border-violet-300/20 bg-violet-500/10">
             <img
               src={p.image}
               alt={p.title}
@@ -31,17 +31,17 @@ export default function WorkGrid() {
 
           <div className="mt-5">
             <h3 className="text-lg font-extrabold tracking-tight">{p.title}</h3>
-            <p className="mt-2 text-slate-700">{p.description}</p>
+            <p className="mt-2 text-violet-100/80">{p.description}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {p.tags.map((t) => (
-                <span key={t} className="text-xs rounded-full px-3 py-1 bg-black/5 border border-black/10 text-slate-700">
+                <span key={t} className="text-xs rounded-full px-3 py-1 bg-violet-500/10 border border-violet-300/20 text-violet-100/80">
                   {t}
                 </span>
               ))}
             </div>
 
-            <a href={p.link || "#contact"} className="mt-6 inline-flex items-center gap-2 text-sm text-slate-700 group-hover:text-slate-900 transition">
+            <a href={p.link || "#contact"} className="mt-6 inline-flex items-center gap-2 text-sm text-violet-100/80 group-hover:text-white transition">
               View details <ArrowUpRight size={16} />
             </a>
           </div>

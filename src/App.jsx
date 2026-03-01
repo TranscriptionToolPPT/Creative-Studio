@@ -16,14 +16,14 @@ function TinyPolicy({ id, title, text }) {
   return (
     <div id={id} className="card mt-10">
       <div className="text-lg font-extrabold">{title}</div>
-      <p className="mt-2 text-slate-700">{text}</p>
+      <p className="mt-2 text-violet-100/80">{text}</p>
     </div>
   )
 }
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FFF7ED] via-[#FFE7D1] to-[#FFF1E6]">
+    <div className="min-h-screen">
       <Navbar />
       <main>
         <Hero />
@@ -43,19 +43,19 @@ export default function App() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="card">
               <div className="text-lg font-extrabold">Mission</div>
-              <p className="mt-2 text-slate-700">
+              <p className="mt-2 text-violet-100/80">
                 Build products that feel effortless for users and powerful for businesses.
               </p>
             </div>
             <div className="card">
               <div className="text-lg font-extrabold">Focus</div>
-              <p className="mt-2 text-slate-700">
+              <p className="mt-2 text-violet-100/80">
                 Performance, clean UI, and real-world usability — not just visuals.
               </p>
             </div>
             <div className="card">
               <div className="text-lg font-extrabold">Approach</div>
-              <p className="mt-2 text-slate-700">
+              <p className="mt-2 text-violet-100/80">
                 Short feedback loops, clear deliverables, and fast iterations.
               </p>
             </div>
