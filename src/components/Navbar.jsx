@@ -22,13 +22,13 @@ export default function Navbar() {
       className="sticky top-0 z-50"
     >
       {/* Top bar */}
-      <div className="border-b border-violet-300/20 bg-[#120a26]/80 backdrop-blur-xl">
+      <div className="border-b border-cyan-300/20 bg-[#0b1220]/80 backdrop-blur-xl">
         <Container className="flex items-center justify-between py-4">
           <a href="#" className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-indigo-500 shadow-soft" />
+            <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-cyan-500 via-sky-500 to-blue-600 shadow-soft" />
             <div className="leading-tight">
               <div className="text-sm font-extrabold tracking-tight text-white">{SITE.brand}</div>
-              <div className="text-[11px] text-violet-200/70">{SITE.location}</div>
+              <div className="text-[11px] text-slate-300/70">{SITE.location}</div>
             </div>
           </a>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-violet-100/80 hover:text-white transition"
+                className="text-sm text-slate-200/85 hover:text-white transition"
               >
                 {l.label}
               </a>

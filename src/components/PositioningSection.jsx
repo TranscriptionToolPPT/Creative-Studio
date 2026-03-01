@@ -24,10 +24,10 @@ export default function PositioningSection() {
             className="card"
           >
             <div className="flex items-start gap-3">
-              <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-violet-500/80 to-indigo-500/75 grid place-items-center shadow-soft">
+              <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-cyan-500/80 to-blue-600/75 grid place-items-center shadow-soft">
                 <Icon size={18} />
               </div>
-              <p className="text-violet-100/85 font-medium leading-relaxed">{item.text}</p>
+              <p className="text-slate-200/90 font-medium leading-relaxed">{item.text}</p>
             </div>
           </motion.div>
         )
