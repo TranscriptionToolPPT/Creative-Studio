@@ -20,13 +20,13 @@ export default function Process() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.55, ease: "easeOut", delay: idx * 0.05 }}
-            className="card hover:bg-orange-400/15 transition"
+            className="card hover:bg-sky-100 transition"
           >
-            <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-orange-500/60 via-amber-400/45 to-rose-400/35 grid place-items-center shadow-soft">
+            <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-sky-500/60 via-teal-500/45 to-indigo-400/35 grid place-items-center shadow-soft">
               <Icon size={20} />
             </div>
             <div className="mt-4 text-lg font-extrabold">{idx + 1}. {s.title}</div>
-            <p className="mt-2 text-orange-50/85">{s.desc}</p>
+            <p className="mt-2 text-slate-700/85">{s.desc}</p>
           </motion.div>
         )
       })}

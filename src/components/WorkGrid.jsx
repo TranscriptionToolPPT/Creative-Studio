@@ -20,7 +20,7 @@ export default function WorkGrid() {
           transition={{ duration: 0.55, ease: "easeOut", delay: idx * 0.06 }}
           className="card overflow-hidden"
         >
-          <div className="relative h-44 overflow-hidden rounded-2xl border border-orange-200/35 bg-orange-400/15">
+          <div className="relative h-44 overflow-hidden rounded-2xl border border-sky-200/60 bg-sky-100">
             <img
               src={p.image}
               alt={p.title}
@@ -37,23 +37,23 @@ export default function WorkGrid() {
 
           <div className="mt-5">
             <h3 className="text-lg font-extrabold tracking-tight">{p.title}</h3>
-            <p className="mt-2 text-orange-50/85">{p.description}</p>
+            <p className="mt-2 text-slate-700/85">{p.description}</p>
 
-            <div className="mt-4 rounded-2xl border border-orange-200/35 bg-orange-400/15 p-4">
-              <div className="text-xs font-bold uppercase tracking-wide text-orange-200/80">Challenge</div>
-              <p className="mt-2 text-sm text-orange-50/85">Need for clearer data visibility and faster team execution across the product lifecycle.</p>
+            <div className="mt-4 rounded-2xl border border-sky-200/60 bg-sky-100 p-4">
+              <div className="text-xs font-bold uppercase tracking-wide text-slate-500/90">Challenge</div>
+              <p className="mt-2 text-sm text-slate-700/85">Need for clearer data visibility and faster team execution across the product lifecycle.</p>
 
-              <div className="mt-4 text-xs font-bold uppercase tracking-wide text-orange-200/80">Solution</div>
+              <div className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500/90">Solution</div>
               <div className="mt-2 flex flex-wrap gap-2">
                 {p.tags.map((t) => (
-                  <span key={t} className="text-xs rounded-full px-3 py-1 bg-orange-400/15 border border-orange-200/35 text-orange-50/85">{t}</span>
+                  <span key={t} className="text-xs rounded-full px-3 py-1 bg-sky-100 border border-sky-200/60 text-slate-700/85">{t}</span>
                 ))}
               </div>
 
-              <div className="mt-4 text-xs font-bold uppercase tracking-wide text-orange-200/80">Outcomes</div>
+              <div className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500/90">Outcomes</div>
               <ul className="mt-2 space-y-2">
                 {outcomes.map((o) => (
-                  <li key={o} className="flex items-start gap-2 text-sm text-orange-50/85">
+                  <li key={o} className="flex items-start gap-2 text-sm text-slate-700/85">
                     <CircleCheckBig size={14} className="mt-0.5" />
                     <span>{o}</span>
                   </li>
@@ -61,7 +61,7 @@ export default function WorkGrid() {
               </ul>
             </div>
 
-            <a href={p.link || "#contact"} className="mt-6 inline-flex items-center gap-2 text-sm text-orange-50/85 hover:text-white transition">
+            <a href={p.link || "#contact"} className="mt-6 inline-flex items-center gap-2 text-sm text-slate-700/85 hover:text-slate-900 transition">
               View full case study <ArrowUpRight size={16} />
             </a>
           </div>

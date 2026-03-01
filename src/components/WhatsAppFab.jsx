@@ -8,7 +8,7 @@ export default function WhatsAppFab() {
       href={whatsappLink}
       target="_blank"
       rel="noreferrer"
-      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-2xl px-4 py-3 bg-gradient-to-r from-amber-400 to-rose-500 text-white shadow-soft hover:brightness-110 transition active:scale-[0.98]"
+      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-2xl px-4 py-3 bg-gradient-to-r from-teal-500 to-indigo-500 text-slate-900 shadow-soft hover:brightness-110 transition active:scale-[0.98]"
       aria-label="Chat on WhatsApp"
       title="Chat on WhatsApp"
     >

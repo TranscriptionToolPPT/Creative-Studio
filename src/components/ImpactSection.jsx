@@ -45,7 +45,7 @@ export default function ImpactSection() {
           <div className="text-3xl font-black bg-gradient-to-r from-orange-200 to-rose-200 bg-clip-text text-transparent">
             <Counter target={item.value} suffix={item.suffix} />
           </div>
-          <div className="mt-3 text-sm text-orange-50/85 leading-relaxed">{item.label}</div>
+          <div className="mt-3 text-sm text-slate-700/85 leading-relaxed">{item.label}</div>
         </motion.div>
       ))}
     </div>

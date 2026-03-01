@@ -34,13 +34,13 @@ ${message}`)
     >
       <div className="lg:col-span-5">
         <div className="card relative overflow-hidden h-full">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-amber-400/10 to-rose-400/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-teal-500/10 to-indigo-400/10" />
           <div className="relative">
             <div className="badge">Let’s work together</div>
             <h3 className="mt-4 text-2xl md:text-3xl font-extrabold tracking-tight">
               Want to Join the Craftive Family?
             </h3>
-            <p className="mt-3 text-orange-50/85">
+            <p className="mt-3 text-slate-700/85">
               Send a quick message and we’ll reply with a clear plan, timeline, and next steps.
             </p>
 
@@ -61,15 +61,15 @@ ${message}`)
             <div className="mt-8 grid gap-3">
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-sm font-bold"><Phone size={16} /> Phone</div>
-                <div className="mt-2 text-orange-50/85">{SITE.phoneDisplay}</div>
+                <div className="mt-2 text-slate-700/85">{SITE.phoneDisplay}</div>
               </div>
               <div className="glass rounded-2xl p-4">
                 <div className="flex items-center gap-2 text-sm font-bold"><Mail size={16} /> Email</div>
-                <div className="mt-2 text-orange-50/85">{SITE.email}</div>
+                <div className="mt-2 text-slate-700/85">{SITE.email}</div>
               </div>
             </div>
 
-            <div className="mt-8 text-xs text-orange-200/55">
+            <div className="mt-8 text-xs text-slate-400/70">
               By contacting us, you agree to our basic privacy & communication terms.
             </div>
           </div>
@@ -79,7 +79,7 @@ ${message}`)
       <div className="lg:col-span-7">
         <div className="card">
           <div className="text-lg font-extrabold">Send a message</div>
-          <p className="mt-2 text-orange-50/85">No backend needed — it opens your email client with the details.</p>
+          <p className="mt-2 text-slate-700/85">No backend needed — it opens your email client with the details.</p>
 
           <form className="mt-6 grid gap-4" onSubmit={onSubmit}>
             <div className="grid gap-4 md:grid-cols-2">
