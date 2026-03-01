@@ -42,7 +42,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.08 }}
-              className="mt-5 text-slate-200/85 max-w-2xl"
+              className="mt-5 text-slate-100/85 max-w-2xl"
             >
               We design and develop intelligent digital products that increase performance, optimize operations, and drive measurable business growth.
             </motion.p>
@@ -86,7 +86,7 @@ export default function Hero() {
                     "Executive reporting dashboards",
                     "Conversion-focused digital systems",
                   ].map((item) => (
-                    <div key={item} className="glass rounded-2xl p-4 text-slate-200/90">{item}</div>
+                    <div key={item} className="glass rounded-2xl p-4 text-slate-100/90">{item}</div>
                   ))}
                 </div>
               </div>

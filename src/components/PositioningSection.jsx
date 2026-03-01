@@ -27,7 +27,7 @@ export default function PositioningSection() {
               <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-cyan-500/80 to-blue-600/75 grid place-items-center shadow-soft">
                 <Icon size={18} />
               </div>
-              <p className="text-slate-200/90 font-medium leading-relaxed">{item.text}</p>
+              <p className="text-slate-100/90 font-medium leading-relaxed">{item.text}</p>
             </div>
           </motion.div>
         )

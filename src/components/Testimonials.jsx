@@ -21,7 +21,7 @@ export default function Testimonials() {
           <blockquote className="mt-5 text-slate-100 leading-relaxed">“{t.quote}”</blockquote>
           <figcaption className="mt-6 text-sm">
             <div className="font-extrabold">{t.name}</div>
-            <div className="text-slate-300/70">{t.company}</div>
+            <div className="text-slate-100/70">{t.company}</div>
           </figcaption>
         </motion.figure>
       ))}
