@@ -33,6 +33,52 @@ body {
     linear-gradient(180deg, rgba(4, 10, 24, 0.3), rgba(4, 10, 24, 0.55));
 }
 
+.animated-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.animated-backdrop__aurora {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(48% 36% at 16% 20%, rgba(71, 154, 255, 0.24), transparent 70%),
+    radial-gradient(46% 34% at 82% 12%, rgba(151, 84, 255, 0.24), transparent 70%),
+    radial-gradient(42% 30% at 50% 88%, rgba(40, 131, 255, 0.2), transparent 72%);
+  filter: blur(16px);
+  animation: auroraShift 22s ease-in-out infinite alternate;
+}
+
+.animated-backdrop__dust {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(125, 211, 252, 0.18) 0 1px, transparent 2px),
+    radial-gradient(circle at 78% 26%, rgba(167, 139, 250, 0.14) 0 1px, transparent 2px),
+    radial-gradient(circle at 44% 76%, rgba(56, 189, 248, 0.16) 0 1px, transparent 2px);
+  background-size: 180px 180px, 220px 220px, 240px 240px;
+  animation: dustDrift 30s linear infinite;
+  opacity: 0.75;
+}
+
+.animated-backdrop__particles {
+  position: absolute;
+  inset: 0;
+}
+
+.backdrop-dot {
+  position: absolute;
+  bottom: -8%;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(116, 242, 255, 0.95), rgba(93, 141, 255, 0.4) 60%, transparent 78%);
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .noise::before{
   content:"";
   position:absolute;
@@ -165,4 +211,36 @@ body {
   border: 1.4px solid rgba(126, 77, 255, 0.7);
   background: linear-gradient(120deg, rgba(9, 22, 41, 0.86), rgba(9, 19, 36, 0.92));
   box-shadow: 0 0 0 1px rgba(126,77,255,.18) inset, 0 18px 38px rgba(3,10,25,.5);
+}
+
+
+@keyframes floatUp {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  8% { opacity: .5; }
+  50% { transform: translate3d(-14px, -52vh, 0); opacity: .35; }
+  100% { transform: translate3d(18px, -110vh, 0); opacity: 0; }
+}
+
+@keyframes dustDrift {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-120px, -90px, 0); }
+}
+
+@keyframes auroraShift {
+  0% { transform: scale(1) translate3d(0, 0, 0); }
+  100% { transform: scale(1.08) translate3d(-2%, 2%, 0); }
+}
+
+select option {
+  color: #e2e8f0;
+  background-color: #0b152b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-backdrop__aurora,
+  .animated-backdrop__dust,
+  .backdrop-dot,
+  .hero-silk {
+    animation: none !important;
+  }
 }

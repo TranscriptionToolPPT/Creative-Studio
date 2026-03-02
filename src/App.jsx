@@ -13,21 +13,24 @@ import Footer from "./components/Footer.jsx"
 import LogosStrip from "./components/LogosStrip.jsx"
 import PositioningSection from "./components/PositioningSection.jsx"
 import ImpactSection from "./components/ImpactSection.jsx"
+import AnimatedBackdrop from "./components/AnimatedBackdrop.jsx"
 
 function TinyPolicy({ id, title, text }) {
   return (
     <div id={id} className="card mt-10">
       <div className="text-lg font-extrabold">{title}</div>
-      <p className="mt-2 text-orange-50/85">{text}</p>
+      <p className="mt-2 text-slate-300/88">{text}</p>
     </div>
   )
 }
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative overflow-x-clip bg-wrap">
+      <AnimatedBackdrop />
+      <div className="page-overlay" aria-hidden />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
 
         <Section
