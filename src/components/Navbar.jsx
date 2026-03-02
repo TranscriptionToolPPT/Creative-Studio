@@ -4,9 +4,10 @@ import { ArrowUpRight } from "lucide-react"
 import Container from "./Container.jsx"
 
 const links = [
-  { label: "About", href: "#about" },
+  { label: "Why Us", href: "#positioning" },
+  { label: "Impact", href: "#impact" },
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
+  { label: "Case Studies", href: "#work" },
   { label: "Process", href: "#process" },
   { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
@@ -21,13 +22,13 @@ export default function Navbar() {
       className="sticky top-0 z-50"
     >
       {/* Top bar */}
-      <div className="border-b border-black/10 bg-white/75 backdrop-blur-xl">
+      <div className="border-b border-orange-200/35 bg-[#2a1a0f]/50 backdrop-blur-xl">
         <Container className="flex items-center justify-between py-4">
           <a href="#" className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-orange-500 via-amber-500 to-rose-500 shadow-soft" />
+            <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-amber-400 via-orange-400 to-rose-500 shadow-soft" />
             <div className="leading-tight">
-              <div className="text-sm font-extrabold tracking-tight text-slate-900">{SITE.brand}</div>
-              <div className="text-[11px] text-slate-600">{SITE.location}</div>
+              <div className="text-sm font-extrabold tracking-tight text-white">{SITE.brand}</div>
+              <div className="text-[11px] text-orange-100/70">{SITE.location}</div>
             </div>
           </a>
 
@@ -36,13 +37,13 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-slate-700 hover:text-slate-900 transition"
+                className="text-sm text-orange-50/85 hover:text-white transition"
               >
                 {l.label}
               </a>
             ))}
             <a href="#contact" className="btn-primary" aria-label="Join the family">
-              Join the Family <ArrowUpRight size={16} />
+              Start Your Project <ArrowUpRight size={16} />
             </a>
           </nav>
 
