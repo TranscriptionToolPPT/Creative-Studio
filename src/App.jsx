@@ -19,7 +19,7 @@ function TinyPolicy({ id, title, text }) {
   return (
     <div id={id} className="card mt-10">
       <div className="text-lg font-extrabold">{title}</div>
-      <p className="mt-2 text-slate-300/88">{text}</p>
+      <p className="mt-2 text-slate-300/90">{text}</p>
     </div>
   )
 }

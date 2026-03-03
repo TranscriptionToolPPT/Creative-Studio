@@ -78,7 +78,7 @@ export default function Hero() {
                     "Executive reporting dashboards",
                     "Conversion-focused digital systems",
                   ].map((item) => (
-                    <div key={item} className="glass rounded-2xl p-4 text-slate-200/92">{item}</div>
+                    <div key={item} className="glass rounded-2xl p-4 text-slate-200/90">{item}</div>
                   ))}
                 </div>
               </div>
@@ -95,8 +95,8 @@ export default function Hero() {
         >
           <div className="md:grid md:grid-cols-2 md:gap-8 items-start">
             <div>
-              <div className="text-3xl font-extrabold leading-tight">Make your growth soar with the power of AI</div>
-              <div className="mt-4 text-slate-300/85 text-sm leading-relaxed max-w-lg">
+              <div className="text-3xl font-extrabold leading-tight text-slate-100">Make your growth soar with the power of AI</div>
+              <div className="mt-4 text-slate-200/90 text-sm leading-relaxed max-w-lg">
                 Learn how to turn insights into measurable outcomes using intelligent workflows, real-time monitoring, and executive visibility.
               </div>
             </div>
